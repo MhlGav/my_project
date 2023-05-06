@@ -1,133 +1,486 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
-</head>
-<header>
-    <div class="logo">
-        <a href="/">
-            <img src="{% static 'pools/img/apple-svgrepo-com.svg' %}" width="60" height="60px"/>
-        </a>
+<html lang="ru" dir="ltr">
+  <head>
+    <link type="image/png" sizes="16x16" rel="icon" href=" {% static 'pools/img/logo.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Firm</title>
+    <link rel="stylesheet" href="{% static 'pools/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'pools/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <!--=======Scroll to top button=======-->
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="/about">О нас</a></li>
-            <li><a href="/contacts">Контакты</a></li>
-            <li><a href="/products">Продукция</a></li>
-            <li><a href="/reviews">Отзывы</a></li>
-        </ul>
+
+    <!--=======Light/Dark theme button=======-->
+    <div class="theme-btn flex-center">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
     </div>
-    <div class="tel">
-        <a href="tel:89823064334">+7 (982) 306 43-34</a>
-    </div>
-</header>
-<body class="content">
-</body>
-<footer>
-</footer>
+
+    <!--=======Header=======-->
+    <header>
+      <div class="nav-bar">
+        <a href="#" class="logo">Audit Firm</a>
+        <div class="navigation">
+          <div class="nav-items">
+            <div class="nav-close-btn"></div>
+            <a class="active" href="#home">Главная</a>
+            <a href="#about">Руководство</a>
+            <a href="#skills">Квалификация</a>
+            <a href="#services">Услуги</a>
+            <a href="#partfolio">Нам доверяют</a>
+            <a href="#contact">Контакты</a>
+          </div>
+        </div>
+        <div class="nav-menu-btn"></div>
+      </div>
+    </header>
+
+    <!--=======Home section=======-->
+    <section class="home flex-center" id="home">
+      <div class="home-container">
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter "></i></a>
+        </div>
+        <div class="info">
+          <h2>Здравствуйте!</h2>
+          <h3>Аудиторская компания "Audit Firm"</h3>
+          <p>Мы осуществляем консультационные услуги или независимую оценку отдельных финансово-экономических сторон деятельности компаний</p>
+
+        </div>
+        <div class="home-img">
+          <img src="{% static 'pools/img/main-img2.jpg' %}" alt="">
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">Ниже<i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <!--=======About section=======-->
+    <section class="about section"  id="about">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Руководство</h1>
+        <h2 class="section-title-02">Руководство</h2>
+        <div class="content flex-center">
+          <div class="about-img">
+            <img src="{% static 'pools/img/about-img1.jpg' %}" alt="">
+          </div>
+          <div class="about-info">
+            <div class="description">
+              <h3>Михаил</h3>
+              <h4>Основатель <span>Audit Firm</span> в <span>Москве</span></h4>
+              <p>Генеральный директор одной из крупнейших аудиторских компаний, а также практикующий аудитор и судебный эксперт</p>
+            </div>
+            <ul class="professional-list">
+              <li class="list-item">
+                <h3>5++</h3>
+                <span>ЛЕТ<br>ОПЫТА</span>
+              </li>
+              <li class="list-item">
+                <h3>3K+</h3>
+                <span> ДОВОЛЬНЫХ<br>КЛИЕНТОВ </span>
+              </li>
+              <li class="list-item">
+                <h3>1K+</h3>
+                <span>УСПЕШНЫХ<br>ПРОВЕРОК</span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=======Skills section=======-->
+    <section class="skills section" id="skills">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Квалификация</h1>
+        <h2 class="section-title-02">Квалификация</h2>
+        <div class="contant">
+          <div class="skills-description">
+            <h3>Наша работа</h3>
+            <p>Наша крупная аудиторская компания способна гарантировать качественное оказание аудиторских услуг предприятиям с большими и даже гигантскими оборотами. Широчайший выбор сопутствующих аудиту услуг, доступность персонального аудитора для детализированного консалтинга после оплаты аудиторских услуг – наши отличия и задел для партнерства на долгие годы.</p>
+          </div>
+          <div class="skills-info education-all">
+            <div class="education">
+              <h4><label>ЦИФРЫ</label></h4>
+              <ul class="edu-list">
+                <li class="item">
+
+                  <p> <span> ISO </span> </p>
+                  <p> <span> 9001:2015 </span> </p>
+                </li>
+                <li class="item">
+
+                  <p> <span>15 </span> </p>
+                  <p> <span>место </span> </p>
+                </li>
+                <li class="item">
+
+                  <p> <span>3,45</span> </p>
+                  <p> <span>млрд руб.</span> </p>
+                </li>
+                 <li class="item">
+
+                  <p> <span> 150 </span> </p>
+                   <p> <span> млн руб. </span> </p>
+                </li>
+                 <li class="item">
+
+                  <p> <span> 118 </span> </p>
+                   <p> <span> тысяч </span> </p>
+                </li>
+                 <li class="item">
+
+                  <p> <span> 20 </span> </p>
+                   <p> <span> тысяч </span> </p>
+                </li>
+              </ul>
+            </div>
+            <div class="education">
+              <h4><label>ФАКТЫ</label></h4>
+              <ul class="bars">
+                <li class="bar">
+                  <div class="info">
+                    <span>качество услуг соответствует мировым стандартам</span>
+
+                  </div>
+
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>среди крупнейших аудиторских групп в России по версии РА «Эксперт»</span>
+
+                  </div>
+
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>сумма выигранных дел по налоговой практике</span>
+
+                  </div>
+
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>финансовые гарантии — ответственность застрахована</span>
+
+                  </div>
+
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>ошибок исправлено у наших клиентов в ходе аудита и консалтинга</span>
+
+                  </div>
+
+                </li>
+
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>проектов по аудиту и налоговым спорам</span>
+
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--=======Services section=======-->
+    <section class="services section " id="services">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Услуги</h1>
+        <h2 class="section-title-02">Услуги</h2>
+        <div class="content">
+          <div class="services-description">
+            <h3>Основная деятельность:</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-container">
+              <div class="service-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>АУДИТОРСКИЕ УСЛУГИ</h3>
+                <div class="learn-more-btn">Смотреть <i class="fas fa-long-arrow-alt-right"></i></div>
+              </div>
+              <div class="service-modal flex-center">
+                <div class="service-modal-body">
+                  <i class="fas fa-times modal-close-btn"></i>
+                  <h3>АУДИТОРСКИЕ УСЛУГИ</h3>
+                  <h4>От 150 000 руб</h4>
+                  <p>Подтвердить финансовую отчетность, выявить и устранить налоговые риски.</p>
+
+
+                </div>
+              </div>
+            </li>
+
+            <li class="service-container">
+              <div class="service-card">
+                <i class="fas fa-file-code"></i>
+                <h3>НАЛОГОВАЯ БЕЗОПАСНОСТЬ</h3>
+                <div class="learn-more-btn">Смотреть <i class="fas fa-long-arrow-alt-right"></i></div>
+              </div>
+              <div class="service-modal flex-center">
+                <div class="service-modal-body">
+                  <i class="fas fa-times modal-close-btn"></i>
+                  <h3>НАЛОГОВАЯ БЕЗОПАСНОСТЬ</h3>
+                  <h4>От 60 000 руб</h4>
+                  <p>Защитить бизнес и личные активы, получить профессиональную поддержку.</p>
+
+                </div>
+              </div>
+            </li>
+            <li class="service-container">
+              <div class="service-card">
+                <i class="fas fa-align-left"></i>
+                <h3>КОНСАЛТИНГ И ПРОЕКТЫ</h3>
+                <div class="learn-more-btn">Смотреть <i class="fas fa-long-arrow-alt-right"></i></div>
+              </div>
+              <div class="service-modal flex-center">
+                <div class="service-modal-body">
+                  <i class="fas fa-times modal-close-btn"></i>
+                  <h3>КОНСАЛТИНГ И ПРОЕКТЫ</h3>
+                  <h4>От 10 500 руб/час </h4>
+                  <p>Сделать бизнес более прибыльным и безопасным: расти, cокращать затраты, управлять рисками.</p>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--=======Portfolio section=======-->
+    <section class="partfolio section" id="partfolio">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Нам доверяют</h1>
+        <h2 class="section-title-02">Нам доверяют</h2>
+        <div class="content">
+          <div class="partfolio-list">
+            <div class="img-card-container">
+              <div class="img-card">
+                <div class="overplay"></div>
+                <div class="info">
+                  <h3>Hochland</h3>
+
+                </div>
+                <img src="{% static 'pools/img/port-img1.png' %}" alt="">
+              </div>
+              <div class="partfolio-model  flex-center">
+                <div class="partfolio-model-body">
+                  <i class="fas fa-times partfolio-close-btn"></i>
+                  <h3>Hochland</h3>
+                  <img src="{% static 'pools/img/port-img1.png' %}" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-card-container">
+              <div class="img-card">
+                <div class="overplay"></div>
+                <div class="info">
+                  <h3>ПЭК:</h3>
+
+                </div>
+                <img src="{% static 'pools/img/port-img2.png' %}" alt="">
+              </div>
+              <div class="partfolio-model  flex-center">
+                <div class="partfolio-model-body">
+                  <i class="fas fa-times partfolio-close-btn"></i>
+                  <h3>ПЭК:</h3>
+                  <img src="{% static 'pools/images/port-img2.png' %}" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-card-container">
+              <div class="img-card">
+                <div class="overplay"></div>
+                <div class="info">
+                  <h3>Гемотест</h3>
+
+                </div>
+                <img src="{% static 'pools/img/port-img3.png' %}" alt="">
+              </div>
+              <div class="partfolio-model  flex-center">
+                <div class="partfolio-model-body">
+                  <i class="fas fa-times partfolio-close-btn"></i>
+                  <h3>Гемотест</h3>
+                  <img src="{% static 'pools/img/port-img3.png' %}" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-card-container">
+              <div class="img-card">
+                <div class="overplay"></div>
+                <div class="info">
+                  <h3>Скит</h3>
+
+                </div>
+                <img src="{% static 'pools/img/port-img4.png' %}" alt="">
+              </div>
+              <div class="partfolio-model  flex-center">
+                <div class="partfolio-model-body">
+                  <i class="fas fa-times partfolio-close-btn"></i>
+                  <h3>Скит</h3>
+                  <img src="{% static 'pools/img/port-img4.png' %}" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-card-container">
+              <div class="img-card">
+                <div class="overplay"></div>
+                <div class="info">
+                  <h3>Айсберри</h3>
+
+                </div>
+                <img src="{% static 'pools/img/port-img5.png' %}" alt="">
+              </div>
+              <div class="partfolio-model  flex-center">
+                <div class="partfolio-model-body">
+                  <i class="fas fa-times partfolio-close-btn"></i>
+                  <h3>Айсберри</h3>
+                  <img src="{% static 'pools/img/port-img5.png' %}" alt="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--=======Get-in-touct=======-->
+
+      <!--=======Our Clients=======-->
+      <div class="our-client sub-section">
+        <div class="container flex-center">
+          <h1 class="section-title-01">Достижения</h1>
+          <h2 class="section-title-02">Достижения</h2>
+          <div class="content">
+               <div class="swiper client-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex-center">
+                  <div class="client-img">
+                    <img src="{% static 'pools/img/client.jpg' %}" alt="">
+                  </div>
+                  <div class="clietn-details">
+                    <p>В составе WiseAdvice Consulting Group</p>
+                    <h3>WiseAdvice</h3>
+
+                  </div>
+                </div>
+                <div class="swiper-slide flex-center">
+                  <div class="client-img">
+                    <img src="{% static 'pools/img/client2.jpg' %}" alt="">
+                  </div>
+                  <div class="clietn-details">
+                    <p>Состоим в СРО «Содружество»</p>
+                    <h3>Содружество</h3>
+
+                  </div>
+                </div>
+                <div class="swiper-slide flex-center">
+                  <div class="client-img">
+                    <img src="{% static 'pools/img/client3.png' %}" alt="">
+                  </div>
+                  <div class="clietn-details">
+                    <p>Членство торгово-промышленной палаты Российской Федерации</p>
+                    <h3>Торгово-промышленная палата</h3>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+              <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--=======Contact section=======-->
+    <section class="contact section " id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Контакты</h1>
+        <h2 class="section-title-02">Контакты</h2>
+        <div class="content">
+          <div class="contact-left">
+            <h2>Мы готовы помочь Вам</h2>
+            <ul class="contact-list">
+              <li>
+                <h3 class="item-title">
+                  <i class="fas fa-phone"></i>Телефон
+                </h3>
+                <span>+7 982-306-4334</span>
+              </li>
+              <li>
+                <h3 class="item-title">
+                  <i class="fas fa-envelope"></i>Email
+                </h3>
+                <span><a href="mikhail.gavrilyuk.03@mail.ru">mikhail.gavrilyuk.03@mail.ru</a></span>
+              </li>
+              <li>
+                <h3 class="item-title">
+                  <i class="fas fa-map-marker-alt"></i>Адрес
+                </h3>
+                <span>г. Москва, Деловой центр</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-rigth">
+            <p>Вы также можете оставить заявку <br><span>Мы с Вами свяжемся</span></p>
+            <form action="feedback/" method="post" class="contact-form">
+              {% csrf_token %}
+              <div class="third-row">
+                <input name="email" type="email" placeholder="Email">
+                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+              </div>
+              <button class="btn" type="submit">Отправить <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=======Footer=======-->
+    <footer>
+      <div class="footer-container">
+        <div class="hr"></div>
+        <div class="info group">
+          <h3>Больше информации</h3>
+          <ul>
+            <li><a href="#skills">Квалификация</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#partfolio">Нам доверяют</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="hr"></div>
+      </div>
+    </footer>
+    <!--=======External scripts=======-->
+    <script src="{% static 'pools/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'pools/js/main.js' %}"></script>
+
+  </body>
 </html>
 
-<style>
-    header {
-        background-color: white;
-    }
-
-    body.content {
-        background-color: #efeeee;
-        height: 100%;
-        width: 100%;
-    }
-
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .menu {
-        flex-grow: 1;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .menu li {
-        margin-right: 20px;
-    }
-
-    .menu li:last-child {
-        margin-right: 0;
-    }
-
-    .menu a {
-        padding: 8px 10px;
-    }
-
-    .logo {
-        margin-right: 30px;
-    }
-
-    .menu a,
-    .menu .active {
-        display: block;
-        padding: 8px 10px;
-    }
-
-    .menu .active {
-        color: #fff;
-        background-color: #ff3d00;
-        border-radius: 8px;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 18px;
-        list-style: none;
-    }
-
-    .menu a,
-    .menu .active {
-        display: block;
-        padding: 8px 10px;
-        text-transform: uppercase;
-        letter-spacing: .27em;
-    }
-
-    .menu a {
-        color: #000;
-        text-decoration: none;
-    }
-
-    .tel {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .tel a {
-        color: #000;
-        text-decoration: none;
-    }
-
-        .menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 2px 0 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 18px;
-    list-style: none;
-    }
-
-</style>

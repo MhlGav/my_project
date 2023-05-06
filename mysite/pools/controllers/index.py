@@ -1,8 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
+from pools.models import Feedback
 
 
 def index(request):
+
     return render(request, 'index.html', {})
 
 
