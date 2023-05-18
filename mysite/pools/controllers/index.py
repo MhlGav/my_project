@@ -20,3 +20,15 @@ def products(request):
 
 def reviews(request):
     return HttpResponse("Our reviews")
+
+def ruler(request):
+
+    return render(request, 'ruler.html', {})
+
+def kval(request):
+
+    return render(request, 'kval.html', {})
+
+def dover(request):
+
+    return render(request, 'dover.html', {})
