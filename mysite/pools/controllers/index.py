@@ -32,3 +32,7 @@ def kval(request):
 def dover(request):
 
     return render(request, 'dover.html', {})
+
+def dostig(request):
+
+    return render(request, 'dostig.html', {})

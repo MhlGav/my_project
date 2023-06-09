@@ -1,0 +1,54 @@
+   {% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <link type="image/png" sizes="16x16" rel="icon" href=" {% static 'pools/img/logo.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Firm</title>
+    <link rel="stylesheet" href="{% static 'pools/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'pools/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <!--=======Scroll to top button=======-->
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!--=======Light/Dark theme button=======-->
+    <div class="theme-btn flex-center">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div>
+
+    <section class="home flex-center" id="home">
+                <h1 class="section-title-01">Достижения</h1>
+          <h2 class="section-title-02">Достижения</h2>
+      <div class="home-container">
+        <div class="info">
+          <h3>ИНГОССТРАХ</h3>
+          <p>Один из клиентов «Audit Firm» получил от ИНГОССТРАХ по страховке от налоговых претензий — 2,8 млн руб.</p>
+
+            <h3>ИНОСТРАННЫЕ КОМПАНИИ</h3>
+          <p>Работаем с владельцами иностранных компаний как юридическими лицами, так и физическими лицами. Коммуникации и отчеты могут быть на английском языке.</p>
+
+            <h3>НАШ ОПЫТ, КЛИЕНТЫ И ОТЗЫВЫ</h3>
+          <p>С 2005 года мы имеем огромный отраслевой опыт и за 18 лет репутацию надежных аудиторов. Кейсы, портфолио и отзывы клиентов - предоставим вам на экспертной встрече с аудиторами.</p>
+
+        </div>
+          <div class="about-img">
+            <img src="{% static 'pools/img/dostig.jpg' %}" alt="">
+          </div>
+      </div>
+
+    </section>
+
+         <!--=======External scripts=======-->
+    <script src="{% static 'pools/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'pools/js/main.js' %}"></script>
+
+  </body>
+</html>

@@ -33,5 +33,6 @@ urlpatterns = [
     path('dover.html', index.dover),
     path('feedback/index', feedback.index),
     path('api/index', api.index),
-    path('dover', company.index),
+    path('dover.html', company.index),
+    path('dostig.html', index.dostig),
 ]
