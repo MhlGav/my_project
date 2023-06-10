@@ -18,7 +18,6 @@ from django.urls import path
 from pools.controllers import feedback
 from pools.controllers import index
 from pools.controllers import api
-from pools.controllers import company
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,6 +32,5 @@ urlpatterns = [
     path('dover.html', index.dover),
     path('feedback/index', feedback.index),
     path('api/index', api.index),
-    path('dover.html', company.index),
     path('dostig.html', index.dostig),
 ]

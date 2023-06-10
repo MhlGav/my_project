@@ -57,7 +57,7 @@
           <p>Мы осуществляем консультационные услуги или независимую оценку отдельных финансово-экономических сторон деятельности компаний</p>
 
         </div>
-        <div class="home-img">
+        <div class="about-img">
           <img src="{% static 'pools/img/main-img2.jpg' %}" alt="">
         </div>
       </div>
@@ -461,8 +461,8 @@
             <form action="feedback/" method="post" class="contact-form">
               {% csrf_token %}
               <div class="third-row">
-                <input name="email" type="email" placeholder="Email">
-                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                <input name="email" type="email" placeholder="Почта">
+                <textarea name="message" id="" rows="7" placeholder="Сообщение"></textarea>
               </div>
               <button class="btn" type="submit">Отправить <i class="fas fa-paper-plane"></i></button>
             </form>
